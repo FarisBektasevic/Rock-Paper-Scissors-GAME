@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous"/>
+  <link rel="stylesheet" href="style.css">
+  <script src="app.js" defer></script>
+  <title>Rock, Paper, Scissors</title>
+</head>
+<body>
+
+  <!--------------------1st STEP ------------------->
+  <section>
+    <div class="header">
+      <div class="game-name">
+        <h1>ROCK PAPER SCISSORS</h1>
+      </div>
+      <div class="score-box">
+        <div class="score">
+          <h2>Score</h2>
+        </div>
+        <div class="score-count">0</div>
+      </div>
+    </div>
+    
+    <div class="pick-page">
+      <button class="pick-btn" onclick="getPlayersChoice('paper')">
+          <div class="pick paper">
+            <img src="images/icon-paper.svg" alt="">
+        </div>
+      </button>
+      <button class="pick-btn" onclick="getPlayersChoice('scissors')">
+          <div class="pick scissors">
+            <img src="images/icon-scissors.svg" alt="">
+          </div>
+      </button>
+      <button class="pick-btn" onclick="getPlayersChoice('rock')">
+        <div class="pick rock">
+          <img src="images/icon-rock.svg" alt="">
+      </div>
+    </button>
+    </div>
+    <!--------------------STEP RULES ------------------->
+
+  <div class="rules-btn">
+    <h2>RULES</h2>
+  </div>
+
+  <div class="rules-bcg"></div>
+  <div class="rules">
+    <div class="rules-header">
+      <h2>Rules</h2>
+      <i id="close-rules" class="fas fa-times"></i>
+    </div>
+    <img src="images/image-rules.svg" alt="">
+  </div>
+
+  <!------------------------ 2nd STEP ------------------------->
+
+  <div class="contest">
+    <div class="users-pick">
+      <h3>You pick</h3>
+        <div class="pick paper choice" style="display: none;">
+          <img src="images/icon-paper.svg" alt="">
+        </div>
+        <div class="pick rock choice" style="display: none;">
+          <img src="images/icon-rock.svg" alt="">
+        </div>
+        <div class="pick scissors choice" style="display: none;">
+          <img src="images/icon-scissors.svg" alt="">
+        </div>
+    </div>
+    <div class="result">
+      <h3 id="result">YOU WIN</h3>
+        <button class="play-again-btn">
+          Play again
+        </button>
+    </div>
+    <div class="computers-pick">
+      <h3>House pick</h3>
+      <div class="pick paper choice" style="display: none;">
+        <img src="images/icon-paper.svg" alt="">
+      </div>
+      <div class="pick rock choice" style="display: none;">
+        <img src="images/icon-rock.svg" alt="">
+      </div>
+      <div class="pick scissors choice" style="display: none;">
+        <img src="images/icon-scissors.svg" alt="">
+      </div>
+    </div>
+  </div>
+  
+
+  <div class="attribution">
+     Challenge by: <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
+    Coded by <a href="https://github.com/FarisBektasevic" target="_blank">Faris Bektasevic</a>.
+  </div>
+  
+  
+
+</section>
+
+
+</body>
+</html>
